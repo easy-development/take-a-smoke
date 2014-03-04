@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Quicksand;
+  src: url("fonts/Quicksand-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Quicksand;
+  font-weight: bold;
+  src: url("fonts/Quicksand-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('fonts/Lato-Reg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: bold;
+  src: url('fonts/Lato-Bol.ttf') format('truetype');
+}
+
+body {
+  background: #202930;
+  margin-bottom: 30px;
+  margin-top: 68px;
+}
+
+body > div.view_container > div.view > h2 {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  font-size: 1.5em;
+  text-align: center;
+  color: #ffffff;
+  background: #0868C6;
+  margin: 0;
+  padding: 15px 0 15px 0;
+}
+
+body > div.view_container > div.view > .container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+body > div.view_container > div.view > .container > table {
+  display: none;
+  color: #ffffff;
+  width: 100%;
+}
+
+body > div.view_container > div.view > .container > .btn {
+  display: block;
+  margin: 15px auto;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer > .row {
+  margin: 0;
+}
+
+#footer > .row > div {
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  background: #405363;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer > .row > div.active {
+  background: #556D81;
+}
+
+.btn-enjoy-cigarette,
+.btn-enjoy-cigarette:hover {
+  background: #0099cc;
+  color: #ffffff;
+  font-family: "Lato";
+}
+
+.btn-smoke-cigarette,
+.btn-smoke-cigarette:hover {
+  background: #0B6CC9;
+  color: #ffffff;
+  font-family: "Lato";
+}
+
+.smoke-counter-container {
+  background: url('circle.png');
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 25px auto;
+  display: block;
+}
+
+.smoke-counter-container > span {
+  display: block;
+  padding: 70px 0 0 0;
+  text-align: center;
+  font-size: 5em;
+  color: #E0DFDD;
+}
+
+.smoke-stats-container {
+  background: #101318;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.smoke-stats-row {
+  margin: 10px 0;
+}
+
+.smoke-stats-container table {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.smoke-stats-container table > tbody,
+.smoke-stats-container table > tbody > tr {
+  display: block;
+  width: 100%;
+}
+
+.smoke-stats-container table > tbody > tr > td {
+  display: inline-block;
+  width: 30%;
+  padding: 0 10px;
+  font-family: "Lato";
+}
+
+.smoke-stats-container table.custom > tbody > tr > td {
+  font-family: "Quicksand";
+  width: 50%;
+}
+
+.smoke-stats-container table > tbody > tr > td > .highlight {
+  color: #3cddc9;
+}
+
+@media screen and (max-width: 640px) {
+  .smoke-stats-container table {
+    font-size: 1.2em;
+  }
+
+  .smoke-stats-container table.custom {
+    font-size: 1.0em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .smoke-stats-container table > tbody > tr > td.information_label {
+    width:55%;
+    text-align: left;
+  }
+
+  .smoke-stats-container table > tbody > tr > td.information_dot {
+    width:5%;
+  }
+
+  .smoke-stats-container table > tbody > tr > td.information {
+    width:20%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .smoke-stats-container table {
+    font-size: 1em;
+  }
+  .smoke-stats-container table.custom {
+    font-size: 0.9em;
+  }
+}
+

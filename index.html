@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="apple-touch-icon" sizes="57×57" href="images/small.png" />
+  <link rel="apple-touch-icon" sizes="114×114" href="images/large.png"/>
+
+  <link rel="apple-touch-startup-image" href="res/screen/ios/screen-iphone-portrait.png" />
+  <link rel="apple-touch-startup-image" sizes="640×920" href="res/screen/ios/screen-iphone-portrait-2x.png" />
+  <link rel="apple-touch-startup-image" sizes="768×1004" href="res/screen/ios/screen-iphone-portrait-568h-2x.png" media="screen and (min-device-width: 321px) and (max-device-width: 1024px) and (orientation:portrait)" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Take a Smoke</title>
+
+  <script src="assets/jquery.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <link href="assets/style.css" rel="stylesheet">
+  <script src="assets/application.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+      Application.Init();
+    });
+  </script>
+</head>
+
+<body>
+  <div class="view_container" data-view-container>
+    <div class="view" data-view>
+      <h2>Today</h2>
+      <div class="container">
+
+        <div data-information-cigarettes-today-has class="smoke-counter-container">
+          <span data-information-cigarettes-today></span>
+        </div>
+
+        <div data-information-cigarettes-today-has class="smoke-stats-container">
+          <table data-information-cigarettes-today-container>
+            <tbody>
+              <tr>
+                <td class="information_label text-center">First Cigarette</td>
+                <td class="information_dot text-center">:</td>
+                <td class="information text-center" data-information-cigarettes-today-first-time></td>
+              </tr>
+              <tr>
+                <td class="information_label text-center">Last Cigarette</td>
+                <td class="information_dot text-center">:</td>
+                <td class="information text-center" data-information-cigarettes-today-last-time></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <a data-trigger-cigarettes-smoke class="btn btn-smoke-cigarette"></a>
+      </div>
+    </div>
+
+    <div class="view" data-view>
+      <h2>Statistics</h2>
+
+      <div class="container" data-information-cigarettes-statistics>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+   <div class="row">
+     <div class="col-xs-6" data-view-display="0">
+       Today
+     </div>
+     <div class="col-xs-6" data-view-display="1">
+       Statistics
+     </div>
+    </div>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46468478-1', 'easy-development.com');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
